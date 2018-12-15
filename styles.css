@@ -1,0 +1,89 @@
+body {
+  background-color: #85A5D4;
+  font-family: Roboto, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+}
+.price-cards {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+}
+.price-cards * {
+  text-align: center;
+}
+.card {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+.card:hover {
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.card:last-child {
+  border-bottom: none;
+}
+.card-img {
+  margin-bottom: 30px;
+  width: 100px;
+  height: auto;
+}
+
+.card-header {
+  color: #5572D6;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.card span {
+  color: #5572D6;
+}
+.card p {
+  color: #AAA8A7;
+  font-weight: 500;
+  margin: 30px 0px 30px 0px;
+}
+.card-price {
+  font-size: 0;
+}
+.card .currency {
+  display: inline-block;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 700;
+  vertical-align: top;
+}
+.card .value {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.card .duration {
+  font-size: 18px;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+@media (min-width: 900px) {
+  .container {
+    padding: 100px 0 0;
+  }
+  .price-cards {
+    flex-direction: row;
+  }
+  .card {
+    border-bottom: none;
+    flex-basis: 100%;
+  }
+  .card:last-child {
+    border-right: none;
+  }
+}
